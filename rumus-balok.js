@@ -4,13 +4,13 @@
         const elementAngkaKetiga = document.querySelector('.tinggi');
 
         // button
-        const elementTombolTambah = document.querySelector('.tombol-hitung');
+        const elementTombolHitung = document.querySelector('.tombol-hitung');
     
 
         // hasil
         const elementHasil = document.querySelector('.hasil');
 
-        elementTombolTambah.addEventListener('click', function() {
+        elementTombolHitung.addEventListener('click', function() {
             const nilaiAngkaPertama = Number(elementAngkaPertama.value);
             const nilaiAngkaKedua = Number(elementAngkaKedua.value);
             const nilaiAngkaKetiga = Number(elementAngkaKetiga.value);
@@ -19,7 +19,7 @@
             elementHasil.textContent = `Hasilnya adalah ${hasil}`;
         });
 
-        // Darkmode
+        // Lightmode
 
         const tombol = document.querySelector(".light-mode");
         tombol.addEventListener('click', function() {
